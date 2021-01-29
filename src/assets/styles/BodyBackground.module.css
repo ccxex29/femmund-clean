@@ -1,0 +1,19 @@
+.curved, .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.curved {
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.content {
+  height: 100%;
+  margin-top: 4rem;
+}
+
+/*# sourceMappingURL=BodyBackground.module.css.map */
