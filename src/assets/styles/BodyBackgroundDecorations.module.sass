@@ -1,0 +1,57 @@
+.cloudsWrapper
+  width: 100%
+  margin-top: 4rem
+  display: flex
+  justify-content: space-between
+
+.cloudsLeft, .cloudsRight
+  div
+    background-color: #EEE
+    border-radius: 30px
+    position: absolute
+
+.cloudsLeft
+  .cloudsLeft1
+    height: 1rem
+    width: 6rem
+    margin-left: 12px
+  .cloudsLeft2
+    height: 1rem
+    width: 3rem
+    margin-top: -12px
+    margin-left: 37px
+  .cloudsLeft3
+    height: 1rem
+    width: 7rem
+    margin-left: 40px
+    margin-top: 12px
+  .cloudsLeft4
+    height: 1rem
+    width: 4rem
+    margin-top: 20px
+    margin-left: 24px
+
+.cloudsRight
+  .cloudsRight1
+    height: 1rem
+    $width: 6rem
+    width: $width
+    margin-left: calc(-#{$width})
+  .cloudsRight2
+    height: 1rem
+    $width: 4rem
+    width: $width
+    margin-left: calc(-#{$width} - 56px)
+    margin-top: -12px
+  .cloudsRight3
+    height: 1rem
+    $width: 6rem
+    width: $width
+    margin-left: calc(-#{$width} - 48px)
+    margin-top: 12px
+  .cloudsRight4
+    height: 1rem
+    $width: 4rem
+    width: $width
+    margin-left: calc(-#{$width} - 36px)
+    margin-top: 20px

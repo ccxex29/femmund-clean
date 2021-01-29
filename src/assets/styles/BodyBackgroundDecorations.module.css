@@ -1,0 +1,62 @@
+.cloudsWrapper {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cloudsLeft div, .cloudsRight div {
+  background-color: #EEE;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.cloudsLeft .cloudsLeft1 {
+  height: 1rem;
+  width: 6rem;
+  margin-left: 12px;
+}
+.cloudsLeft .cloudsLeft2 {
+  height: 1rem;
+  width: 3rem;
+  margin-top: -12px;
+  margin-left: 37px;
+}
+.cloudsLeft .cloudsLeft3 {
+  height: 1rem;
+  width: 7rem;
+  margin-left: 40px;
+  margin-top: 12px;
+}
+.cloudsLeft .cloudsLeft4 {
+  height: 1rem;
+  width: 4rem;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.cloudsRight .cloudsRight1 {
+  height: 1rem;
+  width: 6rem;
+  margin-left: calc(-6rem);
+}
+.cloudsRight .cloudsRight2 {
+  height: 1rem;
+  width: 4rem;
+  margin-left: calc(-4rem - 56px);
+  margin-top: -12px;
+}
+.cloudsRight .cloudsRight3 {
+  height: 1rem;
+  width: 6rem;
+  margin-left: calc(-6rem - 48px);
+  margin-top: 12px;
+}
+.cloudsRight .cloudsRight4 {
+  height: 1rem;
+  width: 4rem;
+  margin-left: calc(-4rem - 36px);
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=BodyBackgroundDecorations.module.css.map */
