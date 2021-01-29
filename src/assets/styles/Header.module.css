@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 .header {
-  font-family: cursive;
-  font-weight: bold;
+  font-family: "Red Hat Display";
+  font-weight: 500;
   font-size: 2rem;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=Header.module.css.map */
