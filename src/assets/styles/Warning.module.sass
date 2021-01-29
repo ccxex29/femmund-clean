@@ -1,4 +1,39 @@
 @use 'sass_modules/variables'
 
+.warningWrapper
+  position: fixed
+  bottom: 5rem
+  display: flex
+  justify-content: center
+  width: calc(100% - 8rem)
+
 .warningBox
   background-color: variables.$warningColor
+  color: #333
+  width: 420px
+  height: 56px
+  display: flex
+  align-items: center
+  border-radius: 16px
+  span
+    width: 100%
+    text-align: center
+
+.closeBtn
+  $sz: 32px
+  position: absolute
+  margin-left: 420px - ($sz / 2)
+  margin-top: -48px
+  .closeBtnFill
+    background-color: #EEE
+    width: $sz - 8px
+    height: $sz - 8px
+    border-radius: 999px
+    position: absolute
+    z-index: 1
+    margin-top: 4px
+    margin-left: 4px
+  svg
+    z-index: 2
+    position: relative
+
