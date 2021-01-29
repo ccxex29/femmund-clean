@@ -41,9 +41,9 @@ const Warning = () => {
                             This site is under development
                         </span>
                     <div className={styles.closeBtn} onClick={removeWarning} style={{
-                        marginTop: -(3/4 * boxHeight),
-                        marginLeft: boxWidth - (32/2) }}
-                    >
+                        // marginTop: -(1/2 * boxHeight + 32/2),
+                        marginLeft: boxWidth - (32/2)
+                    }}>
                         <div className={styles.closeBtnFill}/>
                         <IoCloseCircle size={32} color={'#666'}/>
                     </div>

@@ -23,6 +23,8 @@
 
 .closeBtn {
   position: absolute;
+  margin-top: -16px;
+  top: 0;
   cursor: pointer;
 }
 .closeBtn .closeBtnFill {
