@@ -28,6 +28,7 @@
   border-radius: 999px;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=BodyContent.module.css.map */

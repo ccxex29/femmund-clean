@@ -7,7 +7,7 @@ const Header = () => {
         <header className={styles.header}>
             <span>Femmund</span>
             <nav>
-                <a href={'https://github.com'}>
+                <a href={'https://github.com/ccxex29/femmund-clean'}>
                     <IoLogoGithub color={'#333'} />
                 </a>
             </nav>

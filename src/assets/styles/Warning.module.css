@@ -25,6 +25,7 @@
   position: absolute;
   margin-left: 404px;
   margin-top: -48px;
+  cursor: pointer;
 }
 .closeBtn .closeBtnFill {
   background-color: #EEE;
