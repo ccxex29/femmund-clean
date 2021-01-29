@@ -7,11 +7,14 @@
   justify-content: center
   width: calc(100% - 8rem)
 
+$boxWidth: 420px
+$boxHeight: 56px
+
 .warningBox
   background-color: variables.$warningColor
   color: #333
-  width: 420px
-  height: 56px
+  width: $boxWidth
+  height: $boxHeight
   display: flex
   align-items: center
   border-radius: 16px
@@ -23,7 +26,7 @@
 .closeBtn
   $sz: 32px
   position: absolute
-  margin-left: 420px - ($sz / 2)
+  //margin-left: $boxWidth - ($sz / 2)
   margin-top: -48px
   cursor: pointer
   .closeBtnFill
