@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef, useCallback} from 'react';
 import styles from '../assets/styles/Warning.module.css';
 import {IoCloseCircle} from 'react-icons/io5';
 import {FaHardHat} from 'react-icons/fa';
@@ -6,25 +6,24 @@ import {FaHardHat} from 'react-icons/fa';
 const Warning = () => {
     const [showWarning, setShowWarning] = useState(true);
     const [boxWidth, setBoxWidth] = useState(420);
-    const [boxHeight, setBoxHeight] = useState(56);
     const boxEl = useRef(null);
+
+    const removeWarning = useCallback(() => {
+        setShowWarning(() => false);
+        window.removeEventListener('resize', updateWidthState);
+    }, []);
+
     useEffect(() => {
         updateWidthState();
-        updateHeightState();
         window.addEventListener('resize', updateWidthState);
         return (() => {
-            window.removeEventListener('resize', updateWidthState);
+            removeWarning();
         });
-    }, []);
-    const removeWarning = () => {
-        setShowWarning(() => false);
-    };
+    }, [removeWarning]);
+
     const updateWidthState = () => {
         setBoxWidth(() => boxEl.current.offsetWidth);
     };
-    const updateHeightState = () => {
-        setBoxHeight(() => boxEl.current.offsetHeight);
-    }
 
     return (
         <>
@@ -41,7 +40,6 @@ const Warning = () => {
                             This site is under development
                         </span>
                     <div className={styles.closeBtn} onClick={removeWarning} style={{
-                        // marginTop: -(1/2 * boxHeight + 32/2),
                         marginLeft: boxWidth - (32/2)
                     }}>
                         <div className={styles.closeBtnFill}/>
